@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoritmosConsole", "Algoritmos\AlgoritmosConsole.csproj", "{527CFC39-1AC5-456F-9B47-1CFD3E9D3C0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoritmosCore", "AlgoritmosCore\AlgoritmosCore.csproj", "{DCD5001D-5DE1-4CEA-BEF0-1521A7D11C44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{527CFC39-1AC5-456F-9B47-1CFD3E9D3C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527CFC39-1AC5-456F-9B47-1CFD3E9D3C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527CFC39-1AC5-456F-9B47-1CFD3E9D3C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527CFC39-1AC5-456F-9B47-1CFD3E9D3C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCD5001D-5DE1-4CEA-BEF0-1521A7D11C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD5001D-5DE1-4CEA-BEF0-1521A7D11C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD5001D-5DE1-4CEA-BEF0-1521A7D11C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD5001D-5DE1-4CEA-BEF0-1521A7D11C44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0344EB72-83E8-4026-AAA0-132BFC2BB80A}
+	EndGlobalSection
+EndGlobal
