@@ -1,6 +1,6 @@
 ﻿using AlgoritmosCore;
 using System;
-using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace AlgoritmosConsole
 {
@@ -8,11 +8,26 @@ namespace AlgoritmosConsole
     {
         static void Main(string[] args)
         {
-            List<int> numeros = new List<int>() { 10, 20, 30, 40, 50, 60, 70 };
-            Dictionary<int, int> grupos = Algoritmos.GroupNumbersByIntervals(numeros, 7);
-            foreach(KeyValuePair<int, int> grupo in grupos)
-                System.Console.WriteLine(grupo);
+            int[] numeros = new int[100000];
+
+            Random random = new Random();
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                numeros[i] = random.Next(1, 10000);
+            }
+            //foreach(int numero in numeros)
+            //    Console.Write("primeira:" + numero + "\t");
+
+            Stopwatch stopwatch = Stopwatch.StartNew();
+
+            Algoritmos.OrderNumbersQuickSort(numeros, 0, numeros.Length - 1);
+            //Algoritmos.OrderNumersInsertionSort(numeros);
+            stopwatch.Stop();
+
+            Console.WriteLine(TimeSpan.FromMilliseconds(stopwatch.ElapsedMilliseconds).TotalSeconds);
+
             Console.ReadKey();
+
         }
     }
 }
